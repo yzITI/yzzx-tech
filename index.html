@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>ITI</title>
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+</head>
+
+<body>
+  <div id="app">
+    <div id="banner" class="fullscreen">
+      <div class="background" :style="{height: banner.bgHeight}">&nbsp;</div>
+      <h1 v-cloak>{{banner.text}}</h1>
+      <transition name="fade">
+        <div class="tip" v-if="banner.showTip">
+          <div>由此展开</div>
+          <img src="./img/util/expand_more.svg">
+        </div>
+      </transition>
+    </div>
+    <div id="intro" class="fullscreen col">
+      <transition name="fade">
+        <div class="row" v-if="open[1]">
+          <div class="col transparent">
+            <img class="icon" src="./img/util/auto.svg">
+            <h2>自治自动</h2>
+          </div>
+          <div class="col transparent">
+            <img class="icon" src="./img/util/collaborate.svg">
+            <h2>团队合作</h2>
+          </div>
+          <div class="col transparent">
+            <img class="icon" src="./img/util/lightbulb.svg">
+            <h2>创意研发</h2>
+          </div>
+        </div>
+      </transition>
+      <div class="center">
+        <img src="./img/ITI.svg">
+        <h2>学生自主的信息技术团队</h2>  
+      </div>
+      <transition name="fade">
+        <div class="row" v-if="open[1]">
+          <div class="col transparent">
+            <img class="icon" src="./img/util/code.svg">
+            <h2>工程维护</h2>
+          </div>
+          <div class="col transparent">
+            <img class="icon" src="./img/util/design.svg">
+            <h2>美工设计</h2>
+          </div>
+          <div class="col transparent">
+            <img class="icon" src="./img/util/educate.svg">
+            <h2>教育共享</h2>
+          </div>
+        </div>
+      </transition>
+    </div>
+    <div id="yzzx" class="fullscreen col">
+      <img class="fullscreen background" src="./img/yzzx/shurentang.jpg">
+      <transition name="slide-fade">
+        <div class="row transparent" v-if="open[2]">
+          <img class="quote" src="./img/util/quote.svg">
+          <h1>人格健全 学术健全 <br> 自治自动 体育兼重</h1>
+        </div>
+      </transition>
+      <div class="row title">
+        <img class="yzzxlogo" src="./img/yzzx/logo.png">
+        <img class="name" src="./img/yzzx/name.png">
+      </div>
+      <transition name="slide-fade">
+        <a href="http://61.155.62.52/yzzx" target="_blank" class="button" v-if="open[2]">了解更多</a>
+      </transition>
+    </div>
+    <div id="edu" class="row">
+      <img src="./img/util/edu.svg">
+      <div class="content col">
+        <h1>教育</h1>
+        <p><strong>ITI</strong>团队非常重视教育和学生个人能力的成长。在这里，不仅有团队内的软件开发技术培训，更有一年一度的著名信息技术普及教育课程<strong>信息学堂</strong>，帮助一届又一届的学生快速融入信息化的时代，广受学校和学生们的好评。新的一年信息学堂，期待你的到来！</p>
+        <a class="button" href="./xxxt.html">了解更多</a>
+      </div>
+    </div>
+    <div id="dev" class="row">
+      <div class="content col">
+        <h1>研发</h1>
+        <p><strong>ITI</strong>一直以来与多方合作从事软件研发工作，并长期帮助学校维护各种网络服务，为江苏省扬州中学的信息化发展做出了卓越贡献。丰富多彩的应用和网页从ITI团队中绽放而出，架起信息的桥梁，展开信息化校园的未来画卷。</p>
+        <a class="button" href="./project.html">了解更多</a>
+      </div>
+      <img src="./img/util/dev.svg">
+    </div>
+    
+    <div id="footer" class="row">
+      <div class="col">
+        <h1>ITI</h1>
+        <hr>
+        <p>ITI Website &copy; 2019 ITI</p>
+      </div>
+      <a class="button" href="./team.html">了解我们的团队</a>
+    </div>
+  </div>
+  <script src="./js/color.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>

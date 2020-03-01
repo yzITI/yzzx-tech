@@ -1,0 +1,12 @@
+branches:
+    only:
+        - master
+
+install: true
+script: true
+after_success:
+    - git config --global user.name "zhuqinggang"
+    - git config --global user.email "zhuqinggangemail@qq.com"
+    - git remote set-url origin https://${CODING_TOKEN}@e.coding.net/cmdblock/Pages/yzzx-tech.git
+    - git checkout master
+    - git push origin

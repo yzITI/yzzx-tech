@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>ITI 团队成员</title>
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/team.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+</head>
+
+<body>
+  <div id="app" class="col" v-cloak>
+    <a href="./index.html"><img class="logo" src="./img/ITI.svg"></a>
+    <transition name="fade" mode="out-in">
+      <div v-if="view == 'banner'" id="banner" key="banner" @click="next">
+        <img class="background" src="./img/team/banner.svg">
+        <div class="content col">
+          <h1>团队介绍</h1>
+          <div class="tip">轻触了解更多</div>
+        </div>
+      </div>
+      <div v-if="view == 'profile'" id="profile" class="row" key="profile" @click="next">
+        <img class="half" src="./img/xxxt/practice.jpg">
+        <div class="col half">
+          <h1>桔子<span>Orange</span></h1>
+          <div class="row">这里放点tag什么的</div>
+          <p>这里是一大段介绍</p>
+          <div class="tip">轻触查看下一页</div>
+        </div>
+      </div>
+    </transition>
+  </div>
+  <script src="./js/team.js"></script>
+</body>
+
+</html>
