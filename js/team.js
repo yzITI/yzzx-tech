@@ -19,6 +19,13 @@ const app = new Vue({
       intro: 'ITI创始人，江苏省扬州中学毕业生，现就读于美国加州大学圣巴巴拉分校。'
     },
     {
+      name: '朱庆刚',
+      nickName: 'Cmdblock',
+      tags: ['AD', 'BE', 'FE'],
+      pic: './img/team/ZQG.jpg',
+      intro: 'ITI软件研发的主力，江苏省扬州中学学生，有极强的网络应用开发和运维技能。'
+    },
+    {
       name: '季雨彤',
       nickName: 'Tina',
       tags: ['FE'],
