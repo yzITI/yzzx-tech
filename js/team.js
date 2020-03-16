@@ -30,7 +30,21 @@ const app = new Vue({
       nickName: 'Tina',
       tags: ['FE'],
       pic: './img/team/JYT.jpg',
-      intro: '澳洲新南威尔士大学软件工程系学生，具有优秀的Web开发技能。'
+      intro: '澳洲新南威尔士大学软件工程系学生，具有优秀的Web开发技能，负责ITI相关项目的前端页面设计。'
+    },
+    {
+      name: '季雨琦',
+      nickName: 'Queenie',
+      tags: ['FE'],
+      pic: './img/team/JYQ.jpg',
+      intro: '澳洲新南威尔士大学软件工程系学生，具有优秀的Web开发技能，负责ITI相关项目的前端页面设计。'
+    },
+    {
+      name: '刘怡',
+      nickName: 'Orange',
+      tags: ['AD', 'CO'],
+      pic: './img/team/LY.jpg',
+      intro: '江苏省扬州中学学生，负责管理ITI团队与其他学生组织的交流合作。'
     }]
   },
   methods: {
