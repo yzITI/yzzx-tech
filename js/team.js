@@ -40,6 +40,13 @@ const app = new Vue({
       intro: '澳洲新南威尔士大学软件工程系学生，具有优秀的Web开发技能，负责ITI相关项目的前端页面设计。'
     },
     {
+      name: '张静远',
+      nickName: '',
+      tags: ['BE'],
+      pic: './img/team/ZJY.jpg',
+      intro: '全国信息学奥林匹克竞赛选手，掌握熟练的后端开发技能。'
+    },
+    {
       name: '刘怡',
       nickName: 'Orange',
       tags: ['AD', 'CO'],
