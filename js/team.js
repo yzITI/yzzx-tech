@@ -54,6 +54,13 @@ const app = new Vue({
       intro: '全国信息学奥林匹克竞赛选手，掌握熟练的后端开发技能。'
     },
     {
+      name: '陈雨涵',
+      nickName: '',
+      tags: ['ED'],
+      pic: './img/team/CYH.jpeg',
+      intro: '江苏省扬州中学学生，全国信息学奥林匹克竞赛选手，信息学堂2019总负责人。'
+    },
+    {
       name: '刘怡',
       nickName: 'Orange',
       tags: ['AD', 'CO'],
