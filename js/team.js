@@ -40,6 +40,13 @@ const app = new Vue({
       intro: '澳洲新南威尔士大学软件工程系学生，具有优秀的Web开发技能，负责ITI相关项目的前端页面设计。'
     },
     {
+      name: '陈柏澜',
+      nickName: 'Nick',
+      tags: ['BE', 'FE'],
+      pic: './img/team/CBL.jpg',
+      intro: '技术顾问，现就读于美国加州大学戴维斯分校，通晓计算机领域的大量知识，人称“Nick百科”。'
+    },
+    {
       name: '张静远',
       nickName: '',
       tags: ['BE'],
