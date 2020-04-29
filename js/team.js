@@ -26,6 +26,13 @@ const app = new Vue({
       intro: 'ITI软件研发的主力，江苏省扬州中学学生，有极强的网络应用开发和运维技能。'
     },
     {
+      name: '丁浩然',
+      nickName: 's1mple',
+      tags: ['ED'],
+      pic: './img/team/DHR.jpg',
+      intro: '顾问，现就读于西安交通大学少年班和人工智能实验班，致力于计算机视觉方面的研究工作。'
+    },
+    {
       name: '季雨彤',
       nickName: 'Tina',
       tags: ['FE'],
